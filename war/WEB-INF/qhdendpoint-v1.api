@@ -1,0 +1,78 @@
+{
+  "extends" : "thirdParty.api",
+  "abstract" : false,
+  "root" : "https://toi-uu-to-hop.appspot.com/_ah/api",
+  "name" : "qhdendpoint",
+  "version" : "v1",
+  "description" : "Api for grasp",
+  "defaultVersion" : false,
+  "discovery" : [ "PUBLIC" ],
+  "adapter" : {
+    "bns" : "https://toi-uu-to-hop.appspot.com/_ah/spi",
+    "deadline" : 65.0,
+    "type" : "lily"
+  },
+  "auth" : {
+    "allowCookieAuth" : false
+  },
+  "frontendLimits" : {
+    "unregisteredUserQps" : -1,
+    "unregisteredQps" : -1,
+    "unregisteredDaily" : -1,
+    "rules" : [ ]
+  },
+  "cacheControl" : {
+    "type" : "no-cache",
+    "maxAge" : 0
+  },
+  "methods" : {
+    "qhdendpoint.qhd" : {
+      "path" : "qhd",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "replace this with your web client ID", "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.toiuutohop.QHDEndpoint.qhd",
+      "request" : {
+        "parameters" : {
+          "input" : {
+            "type" : "string",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    }
+  },
+  "descriptor" : {
+    "schemas" : {
+      "Result" : {
+        "id" : "Result",
+        "type" : "object",
+        "properties" : {
+          "path" : {
+            "type" : "string"
+          },
+          "min" : {
+            "type" : "integer"
+          },
+          "time" : {
+            "type" : "string",
+            "format" : "int64"
+          }
+        }
+      }
+    },
+    "methods" : {
+      "com.toiuutohop.QHDEndpoint.qhd" : {
+        "response" : {
+          "$ref" : "Result"
+        }
+      }
+    }
+  }
+}

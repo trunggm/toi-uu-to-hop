@@ -1,0 +1,124 @@
+{
+  "extends" : "thirdParty.api",
+  "abstract" : false,
+  "root" : "https://toi-uu-to-hop.appspot.com/_ah/api",
+  "name" : "sumnumberendpoints",
+  "version" : "v1",
+  "description" : "Api for sum 2 number",
+  "defaultVersion" : false,
+  "discovery" : [ "PUBLIC" ],
+  "adapter" : {
+    "bns" : "https://toi-uu-to-hop.appspot.com/_ah/spi",
+    "deadline" : 65.0,
+    "type" : "lily"
+  },
+  "auth" : {
+    "allowCookieAuth" : false
+  },
+  "frontendLimits" : {
+    "unregisteredUserQps" : -1,
+    "unregisteredQps" : -1,
+    "unregisteredDaily" : -1,
+    "rules" : [ ]
+  },
+  "cacheControl" : {
+    "type" : "no-cache",
+    "maxAge" : 0
+  },
+  "methods" : {
+    "sumnumberendpoints.grasp" : {
+      "path" : "grasp",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "replace this with your web client ID", "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.toiuutohop.SumNumberEndpoints.grasp",
+      "request" : {
+        "parameters" : {
+          "b" : {
+            "type" : "int32",
+            "required" : true
+          },
+          "c" : {
+            "type" : "int32",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "sumnumberendpoints.sum2Number" : {
+      "path" : "sum2Number",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "replace this with your web client ID", "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.toiuutohop.SumNumberEndpoints.sum2Number",
+      "request" : {
+        "parameters" : {
+          "a" : {
+            "type" : "int32",
+            "required" : true
+          },
+          "b" : {
+            "type" : "int32",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    }
+  },
+  "descriptor" : {
+    "schemas" : {
+      "result" : {
+        "id" : "result",
+        "type" : "object",
+        "properties" : {
+          "costs" : {
+            "type" : "number"
+          },
+          "time" : {
+            "type" : "string",
+            "format" : "int64"
+          },
+          "path" : {
+            "type" : "array",
+            "items" : {
+              "type" : "integer"
+            }
+          }
+        }
+      },
+      "SumNumber" : {
+        "id" : "SumNumber",
+        "type" : "object",
+        "properties" : {
+          "sum" : {
+            "type" : "integer"
+          }
+        }
+      }
+    },
+    "methods" : {
+      "com.toiuutohop.SumNumberEndpoints.grasp" : {
+        "response" : {
+          "$ref" : "result"
+        }
+      },
+      "com.toiuutohop.SumNumberEndpoints.sum2Number" : {
+        "response" : {
+          "$ref" : "SumNumber"
+        }
+      }
+    }
+  }
+}

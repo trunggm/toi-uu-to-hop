@@ -1,0 +1,149 @@
+{
+  "extends" : "thirdParty.api",
+  "abstract" : false,
+  "root" : "https://toi-uu-to-hop.appspot.com/_ah/api",
+  "name" : "phucnnendpoint",
+  "version" : "v1",
+  "description" : "Api for grasp",
+  "defaultVersion" : false,
+  "discovery" : [ "PUBLIC" ],
+  "adapter" : {
+    "bns" : "https://toi-uu-to-hop.appspot.com/_ah/spi",
+    "deadline" : 65.0,
+    "type" : "lily"
+  },
+  "auth" : {
+    "allowCookieAuth" : false
+  },
+  "frontendLimits" : {
+    "unregisteredUserQps" : -1,
+    "unregisteredQps" : -1,
+    "unregisteredDaily" : -1,
+    "rules" : [ ]
+  },
+  "cacheControl" : {
+    "type" : "no-cache",
+    "maxAge" : 0
+  },
+  "methods" : {
+    "phucnnendpoint.lcs" : {
+      "path" : "lcs",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "replace this with your web client ID", "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.toiuutohop.PhucNNEnpoint.lcs",
+      "request" : {
+        "parameters" : {
+          "input" : {
+            "type" : "string",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "phucnnendpoint.editdistance" : {
+      "path" : "editdistance",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "replace this with your web client ID", "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.toiuutohop.PhucNNEnpoint.editDistance",
+      "request" : {
+        "parameters" : {
+          "input" : {
+            "type" : "string",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "phucnnendpoint.multimatrix" : {
+      "path" : "multimatrix",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "replace this with your web client ID", "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.toiuutohop.PhucNNEnpoint.multimatrix",
+      "request" : {
+        "parameters" : {
+          "input" : {
+            "type" : "string",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "phucnnendpoint.chessboard" : {
+      "path" : "chessboard",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "replace this with your web client ID", "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.toiuutohop.PhucNNEnpoint.chessBoard",
+      "request" : {
+        "parameters" : {
+          "input" : {
+            "type" : "string",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    }
+  },
+  "descriptor" : {
+    "schemas" : {
+      "Result" : {
+        "id" : "Result",
+        "type" : "object",
+        "properties" : {
+          "result" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "methods" : {
+      "com.toiuutohop.PhucNNEnpoint.lcs" : {
+        "response" : {
+          "$ref" : "Result"
+        }
+      },
+      "com.toiuutohop.PhucNNEnpoint.editDistance" : {
+        "response" : {
+          "$ref" : "Result"
+        }
+      },
+      "com.toiuutohop.PhucNNEnpoint.multimatrix" : {
+        "response" : {
+          "$ref" : "Result"
+        }
+      },
+      "com.toiuutohop.PhucNNEnpoint.chessBoard" : {
+        "response" : {
+          "$ref" : "Result"
+        }
+      }
+    }
+  }
+}
