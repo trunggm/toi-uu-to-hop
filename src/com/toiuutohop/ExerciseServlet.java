@@ -50,6 +50,9 @@ public class ExerciseServlet extends HttpServlet{
 		else if(name.equals(new String("phucnncb"))){
 			st = new StudentInfo("Phucnn", "ChessBoard", "phucnncb");
 		}
+		else if(name.equals(new String("dunglx"))){
+			st = new StudentInfo("dunglx", "Luyện Kim", "dunglx");
+		}
 		else if(name.equals(new String("phucnnlcs"))){
 			st = new StudentInfo("Phucnn", "LCS", "phucnnlcs");
 		}
@@ -60,7 +63,7 @@ public class ExerciseServlet extends HttpServlet{
 			st = new StudentInfo("Phucnn", "Matrix Chain Multiplication", "phucnnmm");
 		}
 		else if(name.equals(new String("namnv"))){
-			st = new StudentInfo("Namnv", "Nhanh can", "namnv");
+			st = new StudentInfo("Namnv", "Nhánh cận", "namnv");
 		}
 		else if(name.equals(new String("duongkm"))){
 			st = new StudentInfo("Duongkm", "ILP", "duongkm");

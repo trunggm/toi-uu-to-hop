@@ -24,7 +24,7 @@ function init() {
 	console.log(rootpath);
 	// Load the helloworldendpoints API
 	// If loading completes successfully, call loadCallback functionmô
-	gapi.client.load('anhtvendpoint', 'v1', loadCallback, rootpath);
+	gapi.client.load('dunglxendpoint', 'v1', loadCallback, rootpath);
 }
 
 /*
@@ -75,7 +75,7 @@ function enableButtons () {
  */
 function bl3() {
 	var input = $('#input-text').val();
-	var request = gapi.client.anhtvendpoint.tspga({'input': input});
+	var request = gapi.client.dunglxendpoint.luyenkim({'input': input});
 	request.execute(bl3Callback);
 }
 

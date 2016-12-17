@@ -1,7 +1,5 @@
 package com.toiuutohop;
 
-import javax.persistence.criteria.CriteriaBuilder.In;
-
 public class TSP_GA {
 	public TSP_GA () {
 		
@@ -88,12 +86,11 @@ public class TSP_GA {
     public static String compute(String data) {
     	String rs = "<ul style=\"list-style: none;\">";
     	// tạo thành phố
-    	TourManager tm = new TourManager();
     	String[] arr = data.split("\n");
     	for(int i=0; i< arr.length; i++){
     		String[] arri = arr[i].split(" ");
     		City city = new City(Integer.parseInt(arri[0]), Integer.parseInt(arri[1]));
-    		tm.addCity(city);
+    		TourManager.addCity(city);
     	}
         
         // Khởi tạo population
@@ -111,7 +108,6 @@ public class TSP_GA {
         rs += ("<li>Hành trình:</li>");
         rs +=("<li>" + pop.getFittest ()+"</li>");
     	return rs+"</ul>";
-		
 	}
 }
 

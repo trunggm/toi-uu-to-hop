@@ -31,7 +31,7 @@
   <servlet-class>com.google.api.server.spi.SystemServiceServlet</servlet-class>
   <init-param>
    <param-name>services</param-name>
-   <param-value>com.toiuutohop.AnhtvEndpoint,com.toiuutohop.Balo3Endpoint,com.toiuutohop.BeeEndpoint,com.toiuutohop.CuttingStockEndpoint,com.toiuutohop.GraspEndpoint,com.toiuutohop.HungarianEndpoint,com.toiuutohop.PhucNNEnpoint,com.toiuutohop.QHDEndpoint,com.toiuutohop.SumNumberEndpoints,com.toiuutohop.TabuSearchEndpoint,com.toiuutohop.acoEndpoint,com.toiuutohop.duongkmEndpoint,com.toiuutohop.namnvEndpoint</param-value>
+   <param-value>com.toiuutohop.AnhtvEndpoint,com.toiuutohop.Balo3Endpoint,com.toiuutohop.BeeEndpoint,com.toiuutohop.CuttingStockEndpoint,com.toiuutohop.GraspEndpoint,com.toiuutohop.HungarianEndpoint,com.toiuutohop.PhucNNEnpoint,com.toiuutohop.QHDEndpoint,com.toiuutohop.SumNumberEndpoints,com.toiuutohop.TabuSearchEndpoint,com.toiuutohop.acoEndpoint,com.toiuutohop.dunglxEndpoint,com.toiuutohop.duongkmEndpoint,com.toiuutohop.namnvEndpoint</param-value>
   </init-param>
  </servlet>
  <servlet-mapping>

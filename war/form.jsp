@@ -225,11 +225,15 @@ String jsfile = (String) request.getAttribute("jsfile");
                                 <div class="ctg-wrapper">
                                     <ul class="ctg-list">
                                         <li class="ctg-item clearfix">
+                                            <a href="/ex/dunglx" target="_blank">Luyện Kim</a>
+                                            <span class="author">Dunglx</span>
+                                        </li>
+                                        <li class="ctg-item clearfix">
                                             <a href="/ex/duongkm" target="_blank">ILP</a>
                                             <span class="author">Duongkm</span>
                                         </li>
                                         <li class="ctg-item clearfix">
-                                            <a href="/ex/namnv" target="_blank">Nhanh can</a>
+                                            <a href="/ex/namnv" target="_blank">Nhánh cận</a>
                                             <span class="author">Namnv</span>
                                         </li>
                                         <li class="ctg-item clearfix">

@@ -1,0 +1,145 @@
+essentially
+when
+speaking
+of 
+stocks 
+long 
+positions 
+are 
+those 
+that 
+are 
+owned 
+and 
+short 
+positions 
+are 
+those 
+that 
+are 
+owed 
+an 
+investor 
+who 
+owns 
+100 
+shares 
+of 
+xyz 
+stock 
+is 
+said 
+to 
+be 
+long 
+100 
+shares 
+this 
+investor 
+has 
+paid 
+in 
+full 
+the 
+cost 
+of 
+owning 
+the 
+shares 
+an 
+investor
+who 
+has 
+sold 
+100 
+shares
+of 
+xyz 
+stock
+without 
+currently 
+owning 
+those 
+shares 
+is 
+said 
+to 
+be 
+short
+ 100 
+shares 
+the 
+short 
+investor
+owes 
+100 
+shares
+ at 
+settlement 
+and 
+must 
+fulfill
+ the 
+obligation
+ by 
+purchasing 
+the 
+shares 
+in 
+the 
+market 
+to 
+deliver
+ oftentimes 
+the 
+short 
+investor 
+borrows 
+the 
+shares 
+from
+ a
+ brokerage 
+firm 
+in 
+a 
+margin
+account 
+to 
+make
+ the 
+delivery 
+then
+ with 
+hopes
+ the
+stock
+price 
+will 
+fall 
+the 
+investor
+ buys 
+the 
+shares 
+at 
+a 
+lower 
+price 
+to 
+pay 
+back 
+the 
+dealer 
+who 
+loaned 
+them
+when 
+an 
+investor 
+uses 
+option 
+contracts 
+in an account long and short positions have slightly different meanings buying or holding a call or put option is a long position because the investor owns the right to buy or sell the security to the writing investor at a specified price selling or writing a call or put option is just the opposite and is a short position because the investor owes the holder the right to buy the shares from or sell the shares to him at the holders discretion
+long and short positions are used by investors to achieve different results and oftentimes both long and short positions are established simultaneously by an investor to leverage or produce income on a security a simple long stock position is bullish and anticipates growth while a short stock position is bearish long call option positions are bullish as the investor expects the stock price to rise and buys calls with a lower strike price an investor can hedge his long stock position by creating a long put option position giving him the right to sell his stock at a guaranteed price short call option positions offer a similar strategy to short selling without the need to borrow the stock this position allows the investor to collect the premium as income with the possibility of delivering his long stock position at a guaranteed usually higher price conversely a short put position gives the investor the possibility of buying the stock at a specified price and he collects the premium while waiting
+these are just a few examples of how combining long and short positions with different securities can create leverage and hedge against losses in a portfolio it is important to remember that short positions come with higher risks and due to the nature of certain positions may be limited in iras and other cash accounts margin accounts are generally needed for most short positions and your brokerage firm needs to agree that more risky positions are suitable for you
